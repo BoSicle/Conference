@@ -139,7 +139,7 @@
                     <p>Construimos un Movimiento Global que Protege la Web Libre y Abierta para todos.</p>
 
                     <figure>
-                        <img alt="" class="img-responsive" src="assets/images/Moz.png">
+                        <img alt="Logo Mozilla" class="img-responsive" src="assets/images/Moz.png">
                     </figure>
 
                 </div><!-- /.col-sm-6 -->
@@ -212,7 +212,7 @@
 
                         <h4>Odin Mojica</h4>
 
-                        <p>Mozilla México</p>
+                        <p>Comunidad Mozilla</p>
 
                       </div><!-- /.speaker -->
                 </div><!-- /.col-md-4 -->
@@ -226,7 +226,7 @@
 
                         <h4>Luis Sánchez</h4>
 
-                        <p>Mozilla Reps Council</p>
+                        <p>Comunidad Mozilla</p>
 
                       </div><!-- /.speaker -->
                 </div><!-- /.col-md-4 -->
@@ -240,7 +240,7 @@
 
                         <h4>Sebastian Aguilar</h4>
 
-                        <p>Mozilla México MexMod</p>
+                        <p>Comunidad Mozilla</p>
 
                     </div><!-- /.speaker -->
                 </div><!-- /.col-md-4 -->
@@ -259,7 +259,7 @@
 
                         <h4>Emilio Cabrera</h4>
 
-                        <p>Mozilla Learning Network</p>
+                        <p>Comunidad Mozilla</p>
 
                       </div>
                 </div>
@@ -273,7 +273,7 @@
 
                         <h4>Jusaí Prieto</h4>
 
-                        <p>Mozilla Hispano</p>
+                        <p>Comunidad Mozilla</p>
 
                      </div>
                 </div>
@@ -284,7 +284,7 @@
                             <img alt="Uriel Jurado" class="img-responsive center-block" src="assets/images/speakers/Uriel.jpeg">
                         </figure>
                         <h4>Uriel Jurado</h4>
-                        <p>Mozilla Hispano</p>
+                        <p>Comunidad Mozilla</p>
                       </div>
                 </div>
                 <div class="col-md-4">
@@ -293,7 +293,7 @@
                             <img alt="Gabriel Gómez" class="img-responsive center-block" src="assets/images/speakers/Gabriel.jpg">
                         </figure>
                         <h4>Gabriel Gómez</h4>
-                        <p>Mozilla México</p>
+                        <p>Comunidad Mozilla</p>
                    </div>
                 </div>
                 <div class="col-md-4">
@@ -302,7 +302,7 @@
                             <img alt="Alex Fuser" class="img-responsive center-block" src="assets/images/speakers/Fuser.jpeg">
                         </figure>
                         <h4>Alex Fuser</h4>
-                        <p>Mozilla Foundation</p>
+                        <p>Comunidad Mozilla</p>
                    </div>
                 </div>
                                 <div class="col-md-4">
@@ -499,15 +499,15 @@
     </div>
     <!-- Jssor Slider Begin -->
     <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-    <div id="slider1_container" style="position: relative; margin: auto; top: 90px; left: -108px; width: 1300px; height: 500px; overflow: hidden;" >
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;" >
     <!-- Loading Screen-->
-    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+    <!--<div u="loading" style="position: absolute; top: 0px; left: 0px;">
         <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
             top: 0px; left: 0px; width: 100%; height: 100%;">
         </div>
-    </div>
+    </div>-->
     <!-- Slides Container -->
-    <div u="slides" style="cursor: move; position: relative; margin: auto; left: auto; top: 0px; width: 1300px;  height: 500px; overflow: hidden;">
+    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;  height: 500px; overflow: hidden;">
     <div>
         <img u="image" src="assets/images/photos/foxy.jpg" style="position: absolute;  bottom: 0px; left: 0px; width: auto; height: auto;"/>
              <div  u="caption" t="T"  style="position: absolute; width: 480px; height: 120px; top: 250px; left: 30px; padding: 5px;  text-align: left; line-height: 36px; font-size: 30px;  color: #FFFFFF;">
@@ -536,6 +536,22 @@
             
     <!--#region Bullet Navigator Skin Begin -->
     <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+    <script>    
+    jQuery(document).ready(function ($) {
+        var options = {
+            ...
+            $BulletNavigatorOptions: {
+                ...
+                //[Optional] Auto center navigator in parent container
+                //, 0 None, 1 Horizontal, 2 Vertical, 3 Both
+                $AutoCenter: 1,
+                ...
+            },
+            ...
+        };
+        var jssor_slider1 = new $JssorSlider$(containerId, options);
+    });
+    </script>
     <style>
         /* jssor slider bullet navigator skin 21 css */
         /*
